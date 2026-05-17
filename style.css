@@ -67,3 +67,8 @@ a:hover {
     color: #FFEDC7;       /* color when hovering */
     text-decoration: underline; /* optional underline on hover */
 }
+
+.main-image {
+    width: 400px;
+    height: auto;
+}
