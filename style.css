@@ -72,3 +72,25 @@ a:hover {
     width: 300px;
     height: auto;
 }
+
+.gallery-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-image {
+    width: 350px;
+    height: auto;
+}
+
+.tall-image {
+    width: 350px;
+}
