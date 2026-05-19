@@ -94,3 +94,24 @@ a:hover {
 .tall-image {
     width: 350px;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    .navbar a {
+        font-size: 24px;
+        padding: 16px;
+    }
+
+    p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
