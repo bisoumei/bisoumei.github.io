@@ -115,3 +115,10 @@ a:hover {
         padding-right: 15px;
     }
 }
+.project-image {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
