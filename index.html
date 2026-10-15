@@ -1,46 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Jessamin Ato</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-</head>
-<body>
 
-<div class="navbar">
-    <a href="index.html">Home</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Jessamin Ato</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="resume.html">Résumé</a>
     <a href="contact.html">Contact</a>
-</div>
+  </nav>
 
-<div class="content">
+  <main class="page-shell home-page">
 
-    <h1>Jessamin Ato</h1>
+    <!-- Hero section -->
+    <section class="hero" aria-labelledby="hero-title">
 
-    <p>
-        Digital Arts & Sciences student at the University of Florida<br>
-        UI/UX • Digital Design • Illustration
-    </p>
-
-    <h2>View my work ↓</h2>
-
-    <div class="gallery-layout">
-
-        <div class="small-images">
-            <img src="images/fish%20gallery.png" alt="Artwork by Jessamin" class="main-image">
-            <img src="images/think.png" alt="Artwork by Jessamin" class="main-image">
+      <div class="hero-name">
+        <div class="name-row">
+          <h1 id="hero-title">Jessamin</h1>
+          <span class="name-line" aria-hidden="true"></span>
         </div>
 
-        <img src="images/eiirp.png" alt="Artwork by Jessamin" class="main-image tall-image">
+        <div class="surname-row">
+          <span class="name-line" aria-hidden="true"></span>
+          <span class="surname">Ato</span>
+        </div>
+      </div>
 
-    </div>
+      <p class="hero-role">
+        Designer / Illustrator / Creative Thinker
+      </p>
 
-</div>
+      <div class="hero-bottom">
+        <p class="hero-description">
+          I'm a Digital Arts &amp; Sciences student interested
+          in creating thoughtful digital experiences through
+          design, technology, and illustration.
+        </p>
 
+        <a class="hero-button" href="projects.html">
+          Explore my Work ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Selected artwork -->
+    <section class="home-work" aria-labelledby="work-title">
+
+      <div class="section-heading">
+        <span class="eyebrow">SELECTED ARTWORK</span>
+
+        <h2 id="work-title">
+          Some of my work<span class="accent-dot">.</span>
+        </h2>
+      </div>
+
+      <div class="art-grid">
+        <img
+          src="images/eiirp.png"
+          alt="Black and white illustrated artwork"
+          loading="lazy"
+        >
+
+        <img
+          src="images/fish%20gallery.png"
+          alt="Colorful fish and character illustrations"
+          loading="lazy"
+        >
+
+        <img
+          src="images/think.png"
+          alt="Illustrated artwork by Jessamin"
+          loading="lazy"
+        >
+      </div>
+
+    </section>
+  </main>
 </body>
 </html>

@@ -1,15 +1,60 @@
-<div class="content">
-    <h1>Résumé</h1>
 
-    <p>
-        <a href="jessamin-ato-resume.pdf" target="_blank">
-            Open Résumé as PDF
-        </a>
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Résumé | Jessamin Ato</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
 
-    <iframe
-        src="jessamin-ato-resume.pdf"
-        width="100%"
-        height="1000px">
-    </iframe>
-</div>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html" aria-current="page">Résumé</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="page-shell inner-page">
+
+    <header class="page-intro">
+      <span class="eyebrow">EXPERIENCE &amp; SKILLS</span>
+
+      <h1>My <em>Résumé.</em></h1>
+
+      <p class="intro-caption">
+        View my résumé below or open the PDF in a new tab.
+      </p>
+
+      <a
+        class="hero-button"
+        href="jessamin-ato-resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Résumé PDF ↗
+      </a>
+    </header>
+
+    <section class="resume-preview" aria-label="Résumé preview">
+
+      <object
+        data="jessamin-ato-resume.pdf"
+        type="application/pdf"
+        aria-label="Jessamin Ato résumé PDF preview"
+      >
+        <p>
+          PDF preview unavailable.
+          <a href="jessamin-ato-resume.pdf">
+            Open the résumé PDF
+          </a>.
+        </p>
+      </object>
+
+    </section>
+  </main>
+</body>
+</html>
