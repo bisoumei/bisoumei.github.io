@@ -604,4 +604,146 @@ img {
   *::after {
     transition: none !important;
   }
+
+
+/* =====================================
+   FIGMA PROJECT EMBED
+   ===================================== */
+
+.figma-project {
+  padding: 10px 0 90px;
 }
+
+.figma-project-heading {
+  margin-bottom: 35px;
+}
+
+.figma-project-heading h2 {
+  font-size: clamp(36px, 5vw, 70px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+  margin: 12px 0 0;
+}
+
+.figma-project-heading em {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.figma-embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 450px;
+  overflow: hidden;
+  border: 1px solid rgba(4, 15, 15, 0.12);
+  border-radius: 18px;
+  background: #FFFFFF;
+  box-shadow: 0 12px 35px rgba(4, 15, 15, 0.08);
+}
+
+.figma-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .figma-embed {
+    aspect-ratio: auto;
+    height: 65vh;
+    min-height: 400px;
+  }
+
+  .figma-project {
+    padding-bottom: 50px;
+  }
+
+  
+/* =====================================
+   THRICE MOBILE APP PROJECT
+   ===================================== */
+
+/* Give the embed more horizontal space */
+.projects-page {
+  width: min(96%, 1600px);
+}
+
+.figma-project {
+  padding: 10px 0 100px;
+}
+
+.figma-project-heading {
+  margin-bottom: 36px;
+}
+
+.figma-project-heading h2 {
+  font-size: clamp(40px, 5.5vw, 82px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  max-width: 1100px;
+  margin: 12px 0 0;
+}
+
+.figma-project-heading em {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Larger Figma embed */
+.figma-embed {
+  width: 100%;
+  height: min(85vh, 950px);
+  min-height: 650px;
+  aspect-ratio: auto;
+
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(4, 15, 15, 0.12);
+
+  background: #FFFFFF;
+
+  box-shadow:
+    0 16px 45px rgba(4, 15, 15, 0.10);
+}
+
+.figma-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Button below the prototype */
+.project-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .projects-page {
+    width: 94%;
+  }
+
+  .figma-embed {
+    height: 75vh;
+    min-height: 500px;
+    border-radius: 14px;
+  }
+
+  .figma-project-heading h2 {
+    font-size: clamp(36px, 8vw, 55px);
+  }
+
+  .project-actions {
+    justify-content: flex-start;
+  }
+}
+
+
