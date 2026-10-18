@@ -4,59 +4,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Design projects by Jessamin Ato">
   <title>Projects | Jessamin Ato</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
-<body>
+<body class="projects-page">
+
   <nav class="navbar" aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
     <a href="projects.html" aria-current="page">Projects</a>
+    <a href="about.html">About</a>
     <a href="resume.html">Résumé</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <main class="page-shell inner-page projects-page">
+  <main class="projects-main">
 
-    <header class="page-intro">
-      <span class="eyebrow">SELECTED WORK</span>
-      <h1>Projects<span class="accent-dot">.</span></h1>
-    </header>
+    <h1 class="projects-title">Projects</h1>
 
-    <section class="figma-project" aria-labelledby="prototype-title">
+    <section class="projects-grid" aria-label="Selected projects">
 
-      <div class="figma-project-heading">
-        <span class="eyebrow">UI/UX · MOBILE APP DESIGN</span>
+      <!-- PROJECT 1: THRICE -->
+      <a href="thrice.html" class="project-card">
 
-        <h2 id="prototype-title">
-          Thrice <em>Mobile App Prototype</em>
-        </h2>
-      </div>
+        <div class="project-thumbnail thrice-thumbnail">
+          <span class="thrice-logo">Thrice</span>
+        </div>
 
-      <div class="figma-embed">
-        <iframe
-          title="Thrice Mobile App Interactive Figma Prototype"
-          src="https://embed.figma.com/proto/z3jp1kcQPiyICZdow0Va3p/Untitled?node-id=1-2&amp;starting-point-node-id=1%3A11&amp;embed-host=share"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-      </div>
+        <div class="project-info">
+          <p class="project-category">Thrice Mobile App</p>
+          <h2>Mobile App Prototype</h2>
+          <p class="project-description">
+            A mobile app prototype designed in Figma,
+            focusing on interface design and user flow.
+          </p>
+        </div>
 
-      <div class="project-actions">
-        <a
-          class="hero-button"
-          href="https://www.figma.com/design/z3jp1kcQPiyICZdow0Va3p/Untitled?node-id=0-1&t=0xL3HmL7lqZnOEiX-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View the flow ↗
-        </a>
-      </div>
+      </a>
+
+      <!-- PROJECT 2: VENUS A CAPPELLA -->
+      <article class="project-card">
+
+        <div class="project-thumbnail venus-thumbnail">
+          <span>Venus A Cappella</span>
+        </div>
+
+        <div class="project-info">
+          <p class="project-category">Venus A Cappella</p>
+          <h2>Web Design</h2>
+          <p class="project-description">
+            Website concept exploring layout,
+            navigation, and visual organization.
+          </p>
+        </div>
+
+      </article>
+
+      <!-- PROJECT 3: PLACEHOLDER -->
+      <article class="project-card">
+
+        <div class="project-thumbnail placeholder-thumbnail">
+          <span>Coming Soon</span>
+        </div>
+
+        <div class="project-info">
+          <p class="project-category">Project 3</p>
+          <h2>Coming Soon</h2>
+          <p class="project-description">
+            More creative work coming soon.
+          </p>
+        </div>
+
+      </article>
 
     </section>
 
   </main>
+
 </body>
 </html>
