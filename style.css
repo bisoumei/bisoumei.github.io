@@ -1458,7 +1458,7 @@ body.thrice-page h1 {
   /* Cloud 3 and its text move together over the hair, as in Figma. */
   body.home-page .work-cloud {
     width: 21vw;
-    top: 150px;
+    top: 190px;
     left: 24%;
     right: auto;
     z-index: 10;
